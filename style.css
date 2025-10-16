@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculadora {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  width: 320px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+#tetelas {
+  margin-bottom: 20px;
+}
+
+#tela {
+  color:white;
+  font-size: 2.5rem;
+  text-align: right;
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  height: 130px;
+  background-color: transparent;
+  overflow-y: none;
+  overflow-x: auto;
+  scrollbar-width: 20px;
+}
+
+#tela::-webkit-scrollbar {
+  height: 8px; /* altura da barra horizontal */
+}
+
+#tela::-webkit-scrollbar-thumb {
+  background-color: #38B9FF;
+  border-radius: 3px;
+}
+
+#tela::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+#bobotoes {
+  display: grid;
+  grid-template-areas:
+    'meio lado'
+    'baixo lado'
+  ;
+  grid-gap: 20px;
+}
+
+.lado {
+  grid-area: lado;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.meio {
+  grid-area: meio;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.baixo {
+  grid-area: baixo;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  width: 62px;
+  height: 60px;
+  color: #38B9FF;
+  font-weight: 500;
+  font-size: 32px;
+  border-radius: 16px;
+  appearance: none;
+  border: none;
+  background: #303136;
+  
+}
+
+.btn-size2 {
+  height: 96px;
+}
+
+.btn-size3 {
+  width: 144px;
+}
+
+.btn-color1 {
+  background: #616161;
+  color: #A5A5A5;
+}
+
+.btn-color2 {
+  background: #005DB2;
+}
+
+.btn-color3 {
+  background: #1991FF;
+  color: #B2DAFF;
+}
