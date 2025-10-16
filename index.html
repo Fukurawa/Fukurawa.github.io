@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora da Aninha</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="calculadora">
+
+    <div id="tetelas">
+      <div id="tela"></div>
+    </div>
+
+    <div id="bobotoes">
+      <div class="lado">
+        <button data-op="*" class="btn-color2">*</button>
+        <button data-op="-" class="btn-color2">-</button>
+        <button data-op="+" class="btn-color2 btn-size2">+</button>
+        <button data-op="=" class="btn-color3 btn-size2">=</button>
+      </div>
+
+      <div class="meio">
+        <button data-op="Ac" class="btn-color1">Ac</button>
+        <button data-op="del" class="btn-color1">
+          <svg width="27" height="24" viewBox="0 0 27 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.85747 3H23.1353C23.4154 3 23.684 3.10536 23.8821 3.29289C24.0802 3.48043 24.1915 3.73478 24.1915 4V20C24.1915 20.2652 24.0802 20.5196 23.8821 20.7071C23.684 20.8946 23.4154 21 23.1353 21H7.85747C7.68363 21 7.51247 20.9594 7.35918 20.8818C7.20589 20.8042 7.0752 20.6919 6.97872 20.555L1.34606 12.555C1.23026 12.3907 1.16846 12.1975 1.16846 12C1.16846 11.8025 1.23026 11.6093 1.34606 11.445L6.97872 3.445C7.0752 3.30808 7.20589 3.19583 7.35918 3.11821C7.51247 3.04058 7.68363 2.99998 7.85747 3ZM8.42254 5L3.49435 12L8.42254 19H22.0791V5H8.42254ZM14.6858 10.586L17.6727 7.757L19.1672 9.172L16.1792 12L19.1672 14.828L17.6727 16.243L14.6858 13.414L11.6988 16.243L10.2043 14.828L13.1923 12L10.2043 9.172L11.6988 7.757L14.6858 10.586Z" fill="#A5A5A5"/>
+            </svg>
+        </button>
+        <button data-op="/" class="btn-color2">/</button>
+
+        <button data-num="7">7</button>
+        <button data-num="8">8</button>
+        <button data-num="9">9</button>
+        <button data-num="4">4</button>
+        <button data-num="5">5</button>
+        <button data-num="6">6</button>
+        <button data-num="1">1</button>
+        <button data-num="2">2</button>
+        <button data-num="3">3</button>
+      </div>
+
+      <div class="baixo">
+        <button data-num="0" class="btn-size3">0</button>
+        <button data-num=".">.</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
